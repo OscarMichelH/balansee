@@ -5,7 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :assets
-
+  has_many :liabilities
+  has_many :categories
   before_create :add_jti
 
   def add_jti

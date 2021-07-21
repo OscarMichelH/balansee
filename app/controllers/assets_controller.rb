@@ -5,6 +5,7 @@ class AssetsController < ApplicationController
   # GET /assets or /assets.json
   def index
     @assets = current_user.assets
+    @categories = current_user&.categories&.where(is_asset: true) || []
   end
 
   # GET /assets/1 or /assets/1.json
@@ -65,6 +66,6 @@ class AssetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def asset_params
-      params.require(:asset).permit(:name, :description, :value, :income, :incoming_date, :user_id)
+      params.require(:asset).permit(:name, :description, :value, :income, :incoming_date, :user_id, :category_id)
     end
 end

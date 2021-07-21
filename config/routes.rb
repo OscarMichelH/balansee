@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :categories
+  resources :liabilities
   devise_scope :user do
     devise_for :users
     resources :assets
@@ -7,7 +9,7 @@ Rails.application.routes.draw do
       root 'devise/sessions#new'
     end
     authenticated do
-      root 'assets#index', as: :authenticated_root
+      root 'income_statement#index', as: :authenticated_root
     end
   end
 

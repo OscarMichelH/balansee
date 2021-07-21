@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Liabilities</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Debt</th>
+      <th>Payment</th>
+      <th>Departure date</th>
+      <th>Category</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @liabilities.each do |liability| %>
+      <tr>
+        <td><%= liability.name %></td>
+        <td><%= liability.description %></td>
+        <td><%= liability.debt %></td>
+        <td><%= liability.payment %></td>
+        <td><%= liability.departure_date %></td>
+        <td><%= liability.category&.title %></td>
+        <td><%= link_to 'Show', liability %></td>
+        <td><%= link_to 'Edit', edit_liability_path(liability) %></td>
+        <td><%= link_to 'Destroy', liability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Liability', new_liability_path, class: 'btn btn-dark' %>
+<hr>
+<h1>
+  Liability Categories
+</h1>
+<% @categories.each do |category| %>
+  <%= link_to category.title, category_path(category), class: 'badge badge-secondary' %>
+<% end %>
+<br><br>
+<%= link_to 'New Category', new_category_path(is_asset: false), class: 'btn btn-dark' %>

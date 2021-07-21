@@ -36,10 +36,14 @@
     <%= form.date_field :incoming_date, class: 'form-control' %>
   </div>
 
+  <div class="form-control">
+    <%= form.label :category, class: 'fw-bold' %>
+    <%= form.collection_select :category_id, current_user.categories.where(is_asset: true), :id, :title, {:include_blank => true}, {class: "form-control"} %>
+  </div>
+
   <%= form.hidden_field :user_id, value: current_user&.id %>
 
   <div class="actions">
     <%= form.submit 'Save', class: 'btn btn-primary mt-2' %>
-
   </div>
 <% end %>
