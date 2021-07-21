@@ -1,0 +1,45 @@
+<%= form_with(model: asset) do |form| %>
+  <% if asset.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(asset.errors.count, "error") %> prohibited this asset from being saved:</h2>
+
+      <ul>
+        <% asset.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-control">
+    <%= form.label :name, class: 'fw-bold'%>
+    <%= form.text_field :name, class: 'form-control' %>
+  </div>
+
+  <div class="form-control">
+    <%= form.label :description, class: 'fw-bold' %>
+    <%= form.text_area :description, class: 'form-control' %>
+  </div>
+
+  <div class="form-control">
+    <%= form.label :value, class: 'fw-bold' %>
+    <%= form.text_field :value, class: 'form-control' %>
+  </div>
+
+  <div class="form-control">
+    <%= form.label :income, class: 'fw-bold' %>
+    <%= form.text_field :income, class: 'form-control' %>
+  </div>
+
+  <div class="form-control">
+    <%= form.label :incoming_date, class: 'fw-bold' %>
+    <%= form.date_field :incoming_date, class: 'form-control' %>
+  </div>
+
+  <%= form.hidden_field :user_id, value: current_user&.id %>
+
+  <div class="actions">
+    <%= form.submit 'Save', class: 'btn btn-primary mt-2' %>
+
+  </div>
+<% end %>

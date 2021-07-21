@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Balansee</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <% if user_signed_in? %>
+        <%= render 'layouts/navbar' %>
+        <%= render 'layouts/sidebar' %>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+          <%= yield %>
+        </main>
+      <% else %>
+        <div class="row">
+              <%= yield %>
+        </div>
+
+      <% end %>
+
+
+    </div>
+  </div>
+
+  </body>
+</html>
