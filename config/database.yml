@@ -20,8 +20,8 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV.fetch("DATABASE_USERNAME") %>
-  password: <%= ENV.fetch("DATABASE_PASSWORD") %>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
 
 development:
   <<: *default
@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: balansee_production
-  username: balansee
-  password: <%= ENV['BALANSEE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
