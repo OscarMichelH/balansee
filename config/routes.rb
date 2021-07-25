@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   resources :liabilities
   resources :assets
   devise_scope :user do
-    devise_for :users
+    devise_for :users, controllers: {
+      registrations: 'users/registrations',
+      passwords: 'users/passwords',
+    }
     unauthenticated do
       root 'devise/sessions#new'
     end
