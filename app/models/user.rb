@@ -29,7 +29,7 @@ class User < ApplicationRecord
     end
 
     liabilities.each do |liability|
-      case asset.frequency
+      case liability.frequency
       when 'YEARLY'
         yearly_balance += liability.payment
       when 'MONTHLY'
@@ -57,11 +57,12 @@ class User < ApplicationRecord
 
   def avg_balances
     yearly_balance = balance_calculated('YEARLY')
+    color = yearly_balance > 0 ? 'text-success' : 'text-danger'
     result = ''
-    result += '<strong>YEARLY: </strong>' + (yearly_balance).truncate(0).to_s + '<br>'
-    result += '<strong>MONTHLY: </strong>' + (yearly_balance/12).truncate(0).to_s + '<br>'
-    result += '<strong>WEEKLY: </strong>' + (yearly_balance/52.1429).truncate(0).to_s + '<br>'
-    result += '<strong>DAILY: </strong>' + (yearly_balance/365).truncate(0).to_s
+    result += '<p class= "' + color+ '"><strong>YEARLY: </strong>' + (yearly_balance).truncate(0).to_s + '</p>'
+    result += '<p class= "' + color+ '"><strong>MONTHLY: </strong>' + (yearly_balance/12).truncate(0).to_s + '</p>'
+    result += '<p class= "' + color+ '"><strong>WEEKLY: </strong>' + (yearly_balance/52.1429).truncate(0).to_s + '</p>'
+    result += '<p class= "' + color+ '"><strong>DAILY: </strong>' + (yearly_balance/365).truncate(0).to_s + '</p>'
     return result
   end
 end

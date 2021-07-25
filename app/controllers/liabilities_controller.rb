@@ -1,4 +1,5 @@
 class LiabilitiesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_liability, only: %i[ show edit update destroy ]
 
   # GET /liabilities or /liabilities.json
@@ -22,6 +23,7 @@ class LiabilitiesController < ApplicationController
 
   # POST /liabilities or /liabilities.json
   def create
+    liability_params[:payment] = (liability_params[:payment].to_f * -1).to_s if liability_params[:payment].to_f > 0
     @liability = Liability.new(liability_params)
 
     respond_to do |format|

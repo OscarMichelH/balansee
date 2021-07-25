@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
               with: :invalid_auth_token
   before_action :set_current_user, if: :json_request?
 
+  $balances = ''
+
   def after_sign_in_path_for(resource)
     stored_location_for(resource) || assets_path
   end
@@ -19,6 +21,7 @@ class ApplicationController < ActionController::Base
   # Use api_user Devise scope for JSON access
   def authenticate_user!(*args)
     super and return unless args.blank?
+    $balances = current_user.avg_balances if $balances.blank?
     json_request? ? authorize_request : super
   end
 
