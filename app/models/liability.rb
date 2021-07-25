@@ -1,7 +1,7 @@
 class Liability < ApplicationRecord
   validates_presence_of :payment
   belongs_to :user
-  belongs_to :category
+  belongs_to :category, optional: true
 
   before_save :validate_negative_payment
 

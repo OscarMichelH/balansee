@@ -41,10 +41,10 @@
     <%= form.select :frequency, ['YEARLY', 'MONTHLY', 'WEEKLY', 'DAILY'], {:include_blank => true}, {class: "form-control"} %>
   </div>
 
-  <div class="form-control">
-    <%= form.label :category, class: 'fw-bold' %>
-    <%= form.collection_select :category_id, current_user.categories.where(is_asset: false), :id, :title, {:include_blank => true}, {class: "form-control"} %>
-  </div>
+<!--  <div class="form-control">-->
+    <%#= form.label :category, class: 'fw-bold' %>
+    <%#= form.collection_select :category_id, current_user.categories.where(is_asset: false), :id, :title, {:include_blank => true}, {class: "form-control"} %>
+<!--  </div>-->
 
   <%= form.hidden_field :user_id, value: current_user&.id %>
 
