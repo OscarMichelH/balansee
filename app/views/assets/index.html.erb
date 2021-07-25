@@ -10,6 +10,7 @@
       <th>Value</th>
       <th>Income</th>
       <th>Income Date</th>
+      <th>Frequency</th>
       <th>Category</th>
       <th colspan="3"></th>
     </tr>
@@ -23,6 +24,7 @@
         <td><%= asset.value %></td>
         <td><%= asset.income %></td>
         <td><%= asset.incoming_date %></td>
+        <td><%= asset.frequency %></td>
         <td><%= asset.category&.title %></td>
         <td><%= link_to 'Show', asset %></td>
         <td><%= link_to 'Edit', edit_asset_path(asset) %></td>

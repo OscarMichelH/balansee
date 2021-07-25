@@ -65,6 +65,6 @@ class LiabilitiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def liability_params
-      params.require(:liability).permit(:name, :description, :debt, :payment, :departure_date, :user_id, :category_id)
+      params.require(:liability).permit(:name, :description, :debt, :payment, :departure_date, :user_id, :category_id, :frequency)
     end
 end

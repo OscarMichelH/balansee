@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :profile
   resources :categories
   resources :liabilities
   devise_scope :user do

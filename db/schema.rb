@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_21_024011) do
+ActiveRecord::Schema.define(version: 2021_07_25_062711) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2021_07_21_024011) do
     t.datetime "updated_at", precision: 6, null: false
     t.date "incoming_date"
     t.bigint "category_id"
+    t.string "frequency"
     t.index ["category_id"], name: "index_assets_on_category_id"
     t.index ["user_id"], name: "index_assets_on_user_id"
   end
@@ -49,6 +50,7 @@ ActiveRecord::Schema.define(version: 2021_07_21_024011) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "category_id"
+    t.string "frequency"
     t.index ["category_id"], name: "index_liabilities_on_category_id"
     t.index ["user_id"], name: "index_liabilities_on_user_id"
   end
@@ -62,6 +64,7 @@ ActiveRecord::Schema.define(version: 2021_07_21_024011) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "jti", null: false
+    t.float "balance", default: 0.0
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["jti"], name: "index_users_on_jti", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true

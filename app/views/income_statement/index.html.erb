@@ -1,1 +1,10 @@
-<h1 class="pt-4">Income Statement</h1>
+<div class="row">
+  <div class="col-4">
+    <h1 class="pt-4">Income Statement</h1>
+  </div>
+  <div class="col-4 offset-4 text-end pt-4">
+    <button type="button" class="btn btn-secondary has-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" data-bs-content='<%=current_user.avg_balances%>'>
+      Balance
+    </button>
+  </div>
+</div>

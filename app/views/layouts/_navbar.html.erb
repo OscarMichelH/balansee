@@ -4,9 +4,27 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-  <div class="navbar-nav">
-    <div class="nav-item text-nowrap">
-      <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link px-3' %>
-    </div>
+
+
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle px-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Bienvenido
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li>
+        <%= link_to profile_index_path, class: 'dropdown-item' do %>
+          <i class="ni ni-single-02"></i>
+          <span>Mi Usuario</span>
+        <% end %>
+      </li>
+      <li>
+        <div class="dropdown-divider"></div>
+        <%= link_to destroy_user_session_path, method: :delete, class: 'dropdown-item' do %>
+          <i class="ni ni-user-run"></i>
+          <span>Cerrar Sesion</span>
+        <% end %>
+      </li>
+    </ul>
   </div>
+
 </header>
