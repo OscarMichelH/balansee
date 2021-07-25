@@ -9,6 +9,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import * as bootstrap from 'bootstrap'
 import "../stylesheets/application"
+import "@fortawesome/fontawesome-free/css/all"
 require("jquery")
 
 Rails.start()

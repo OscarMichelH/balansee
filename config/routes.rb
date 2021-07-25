@@ -2,10 +2,9 @@ Rails.application.routes.draw do
   resources :profile
   resources :categories
   resources :liabilities
+  resources :assets
   devise_scope :user do
     devise_for :users
-    resources :assets
-
     unauthenticated do
       root 'devise/sessions#new'
     end

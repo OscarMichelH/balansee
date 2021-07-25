@@ -26,9 +26,21 @@
         <td><%= asset.incoming_date %></td>
         <td><%= asset.frequency %></td>
 <!--        <td><%#= asset.category&.title %></td>-->
-        <td><%= link_to 'Show', asset %></td>
-        <td><%= link_to 'Edit', edit_asset_path(asset) %></td>
-        <td><%= link_to 'Destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to asset do %>
+            <i class="fas fa-eye"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to edit_asset_path(asset) do %>
+            <i class="fas fa-edit"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to asset, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <i class="fas fa-trash-alt"></i>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -38,7 +50,7 @@
 
 <%= link_to 'New Asset', new_asset_path, class: 'btn btn-dark' %>
 <hr>
-<h1>
+<!--<h1>-->
 <!--  Asset Categories-->
 <!--</h1>-->
 <%# @categories.each do |category| %>

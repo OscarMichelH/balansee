@@ -26,9 +26,21 @@
         <td><%= liability.departure_date %></td>
         <td><%= liability.frequency %></td>
 <!--        <td><%#= liability.category&.title %></td>-->
-        <td><%= link_to 'Show', liability %></td>
-        <td><%= link_to 'Edit', edit_liability_path(liability) %></td>
-        <td><%= link_to 'Destroy', liability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to liability do %>
+            <i class="fas fa-eye"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to edit_liability_path(liability) do %>
+            <i class="fas fa-edit"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to liability, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <i class="fas fa-trash-alt"></i>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -38,7 +50,7 @@
 
 <%= link_to 'New Liability', new_liability_path, class: 'btn btn-dark' %>
 <hr>
-<h1>
+<!--<h1>-->
 <!--  Liability Categories-->
 <!--</h1>-->
 <%# @categories.each do |category| %>
