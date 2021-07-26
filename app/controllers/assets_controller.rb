@@ -5,6 +5,12 @@ class AssetsController < ApplicationController
   # GET /assets or /assets.json
   def index
     @assets = current_user.assets
+    @total_value = 0
+    @total_income = 0
+    @assets.each do |asset|
+      @total_value += asset.value
+      @total_income += asset.income
+    end
     @categories = current_user&.categories&.where(is_asset: true) || []
   end
 
