@@ -8,8 +8,8 @@ class LiabilitiesController < ApplicationController
     @total_debt = 0
     @total_payment = 0
     @liabilities.each do |liability|
-      @total_value += liability.debt
-      @total_debt += liability.payment
+      @total_debt += liability.debt
+      @total_payment += liability.payment
     end
 
     @categories = current_user&.categories&.where(is_asset: false) || []
