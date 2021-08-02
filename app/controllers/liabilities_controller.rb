@@ -9,7 +9,7 @@ class LiabilitiesController < ApplicationController
     @total_payment = 0
     @liabilities.each do |liability|
       @total_value += liability.debt
-      @total_income += liability.payment
+      @total_debt += liability.payment
     end
 
     @categories = current_user&.categories&.where(is_asset: false) || []
