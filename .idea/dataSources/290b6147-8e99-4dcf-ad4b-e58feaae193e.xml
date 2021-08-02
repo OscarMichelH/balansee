@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Rails balansee: development">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.20">
+    <root id="1">
+      <ServerVersion>9.6</ServerVersion>
+      <DateStyle>mdy</DateStyle>
+      <StartupTime>1627852913</StartupTime>
+    </root>
+    <database id="2" parent="1" name="alexandriahub_development">
+      <ObjectId>132376</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="3" parent="1" name="alexandriahub_test">
+      <ObjectId>132377</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="balansee_development">
+      <ObjectId>143169</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>133701</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Relations>sequence|table|143187|143189|1
+sequence|table|143202|143204|1
+sequence|table|143220|143222|1
+sequence|table|143237|143239|1
+sequence|table|143278|143280|1
+</Relations>
+    </database>
+    <database id="5" parent="1" name="balansee_test">
+      <ObjectId>143170</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="6" parent="1" name="barn_development">
+      <ObjectId>49852</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="7" parent="1" name="barn_test">
+      <ObjectId>49853</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="8" parent="1" name="base_app_development">
+      <ObjectId>133120</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="9" parent="1" name="base_app_test">
+      <ObjectId>133121</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="10" parent="1" name="core_app_development">
+      <ObjectId>133220</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="11" parent="1" name="core_app_test">
+      <ObjectId>133221</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="12" parent="1" name="good_scrum_development">
+      <ObjectId>99541</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="13" parent="1" name="good_scrum_test">
+      <ObjectId>99542</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="14" parent="1" name="guacamole-hub_development">
+      <ObjectId>16926</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="15" parent="1" name="guacamole-hub_test">
+      <ObjectId>16927</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="16" parent="1" name="jdcp_development">
+      <ObjectId>134714</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="17" parent="1" name="jdcp_test">
+      <ObjectId>134715</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="18" parent="1" name="mommys_development">
+      <ObjectId>58071</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="19" parent="1" name="mommys_test">
+      <ObjectId>58072</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="20" parent="1" name="open_fly_development">
+      <ObjectId>133044</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="21" parent="1" name="open_fly_test">
+      <ObjectId>133045</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="22" parent="1" name="oscarmh_development">
+      <ObjectId>16865</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="23" parent="1" name="oscarmh_test">
+      <ObjectId>16866</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="24" parent="1" name="oxford-app-api_development">
+      <ObjectId>142906</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="25" parent="1" name="oxford-app-api_test">
+      <ObjectId>91317</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="26" parent="1" name="oxford_erp_development">
+      <ObjectId>116065</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="27" parent="1" name="oxford_erp_test">
+      <ObjectId>116066</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="28" parent="1" name="postgres">
+      <ObjectId>12401</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="29" parent="1" name="simapre_development">
+      <ObjectId>132676</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="30" parent="1" name="simapre_test">
+      <ObjectId>132677</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="31" parent="1" name="simple_base_development">
+      <ObjectId>133149</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="32" parent="1" name="simple_base_test">
+      <ObjectId>133150</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="33" parent="1" name="snack_development">
+      <ObjectId>132852</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="34" parent="1" name="snack_test">
+      <ObjectId>132853</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="35" parent="1" name="taller_mecanico_development">
+      <ObjectId>132725</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="36" parent="1" name="taller_mecanico_test">
+      <ObjectId>132726</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="37" parent="1" name="vote_counter_development">
+      <ObjectId>133920</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="38" parent="1" name="vote_counter_test">
+      <ObjectId>133921</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="39" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="40" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <CreateDb>1</CreateDb>
+      <CreateRole>1</CreateRole>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <tablespace id="41" parent="1" name="pg_default">
+      <ObjectId>1663</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1</StateNumber>
+    </tablespace>
+    <tablespace id="42" parent="1" name="pg_global">
+      <ObjectId>1664</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1</StateNumber>
+    </tablespace>
+    <schema id="43" parent="4" name="information_schema">
+      <ObjectId>12113</ObjectId>
+      <Acl>10=UC/10
+U/10
+</Acl>
+      <StateNumber>342</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="44" parent="4" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <Acl>10=UC/10
+U/10
+</Acl>
+      <StateNumber>339</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="45" parent="4" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <Acl>10=UC/10
+UC/10
+</Acl>
+      <StateNumber>340</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>133702</IntrospectionStateNumber>
+      <Current>1</Current>
+    </schema>
+    <extension id="46" parent="4" name="plpgsql">
+      <ObjectId>12387</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>494</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <language id="47" parent="4" name="c">
+      <ObjectId>13</ObjectId>
+      <Comment>dynamically-loaded C functions</Comment>
+      <StateNumber>1</StateNumber>
+      <ValidatorName>fmgr_c_validator</ValidatorName>
+      <ValidatorSchema>pg_catalog</ValidatorSchema>
+    </language>
+    <language id="48" parent="4" name="internal">
+      <ObjectId>12</ObjectId>
+      <Comment>built-in functions</Comment>
+      <StateNumber>1</StateNumber>
+      <ValidatorName>fmgr_internal_validator</ValidatorName>
+      <ValidatorSchema>pg_catalog</ValidatorSchema>
+    </language>
+    <language id="49" parent="4" name="plpgsql">
+      <ObjectId>12391</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>494</StateNumber>
+      <Trusted>1</Trusted>
+      <HandlerName>plpgsql_call_handler</HandlerName>
+      <HandlerSchema>pg_catalog</HandlerSchema>
+      <InlineHandlerName>plpgsql_inline_handler</InlineHandlerName>
+      <InlineHandlerSchema>pg_catalog</InlineHandlerSchema>
+      <ValidatorName>plpgsql_validator</ValidatorName>
+      <ValidatorSchema>pg_catalog</ValidatorSchema>
+    </language>
+    <language id="50" parent="4" name="sql">
+      <ObjectId>14</ObjectId>
+      <Comment>SQL-language functions</Comment>
+      <StateNumber>1</StateNumber>
+      <Trusted>1</Trusted>
+      <ValidatorName>fmgr_sql_validator</ValidatorName>
+      <ValidatorSchema>pg_catalog</ValidatorSchema>
+    </language>
+    <access-method id="51" parent="4" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="52" parent="4" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="53" parent="4" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="54" parent="4" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="55" parent="4" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="56" parent="4" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <sequence id="57" parent="45" name="assets_id_seq">
+      <ObjectId>143202</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133687</StateNumber>
+    </sequence>
+    <sequence id="58" parent="45" name="categories_id_seq">
+      <ObjectId>143237</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133691</StateNumber>
+    </sequence>
+    <sequence id="59" parent="45" name="liabilities_id_seq">
+      <ObjectId>143220</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133690</StateNumber>
+    </sequence>
+    <sequence id="60" parent="45" name="plain_users_id_seq">
+      <ObjectId>143278</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133697</StateNumber>
+    </sequence>
+    <sequence id="61" parent="45" name="users_id_seq">
+      <ObjectId>143187</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133686</StateNumber>
+    </sequence>
+    <table id="62" parent="45" name="ar_internal_metadata">
+      <ObjectId>143179</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133685</StateNumber>
+    </table>
+    <table id="63" parent="45" name="assets">
+      <ObjectId>143204</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133694</StateNumber>
+    </table>
+    <table id="64" parent="45" name="categories">
+      <ObjectId>143239</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133692</StateNumber>
+    </table>
+    <table id="65" parent="45" name="liabilities">
+      <ObjectId>143222</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133695</StateNumber>
+    </table>
+    <table id="66" parent="45" name="plain_users">
+      <ObjectId>143280</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133697</StateNumber>
+    </table>
+    <table id="67" parent="45" name="schema_migrations">
+      <ObjectId>143171</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133684</StateNumber>
+    </table>
+    <table id="68" parent="45" name="users">
+      <ObjectId>143189</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>133696</StateNumber>
+    </table>
+    <column id="69" parent="62" name="key">
+      <Position>1</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133685</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="70" parent="62" name="value">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133685</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="71" parent="62" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133685</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="72" parent="62" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133685</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="73" parent="62" name="ar_internal_metadata_pkey">
+      <ObjectId>143185</ObjectId>
+      <StateNumber>133685</StateNumber>
+      <ColNames>key</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <key id="74" parent="62" name="ar_internal_metadata_pkey">
+      <ObjectId>143186</ObjectId>
+      <StateNumber>133685</StateNumber>
+      <ColNames>key</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
+    </key>
+    <column id="75" parent="63" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133687</StateNumber>
+      <DefaultExpression>nextval(&apos;assets_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="76" parent="63" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133687</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="77" parent="63" name="description">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>133687</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="78" parent="63" name="value">
+      <Position>4</Position>
+      <DataType>double precision|0s</DataType>
+      <StateNumber>133687</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="79" parent="63" name="income">
+      <Position>5</Position>
+      <DataType>double precision|0s</DataType>
+      <StateNumber>133687</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="80" parent="63" name="user_id">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133687</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="81" parent="63" name="created_at">
+      <Position>7</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133687</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="82" parent="63" name="updated_at">
+      <Position>8</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133687</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="83" parent="63" name="incoming_date">
+      <Position>9</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>133689</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="84" parent="63" name="category_id">
+      <Position>10</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>133692</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="85" parent="63" name="frequency">
+      <Position>11</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133694</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="86" parent="63" name="assets_pkey">
+      <ObjectId>143211</ObjectId>
+      <StateNumber>133687</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <index id="87" parent="63" name="index_assets_on_user_id">
+      <ObjectId>143218</ObjectId>
+      <StateNumber>133687</StateNumber>
+      <ColNames>user_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <index id="88" parent="63" name="index_assets_on_category_id">
+      <ObjectId>143255</ObjectId>
+      <StateNumber>133692</StateNumber>
+      <ColNames>category_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <key id="89" parent="63" name="assets_pkey">
+      <ObjectId>143212</ObjectId>
+      <StateNumber>133687</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>assets_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="90" parent="63" name="fk_rails_590236dc2e">
+      <ObjectId>143213</ObjectId>
+      <StateNumber>133687</StateNumber>
+      <ColNames>user_id</ColNames>
+      <RefTableId>143189</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="91" parent="63" name="fk_rails_86ffe9cd23">
+      <ObjectId>143256</ObjectId>
+      <StateNumber>133692</StateNumber>
+      <ColNames>category_id</ColNames>
+      <RefTableId>143239</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>categories</RefTableName>
+      <RefKeyName>categories_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="92" parent="64" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133691</StateNumber>
+      <DefaultExpression>nextval(&apos;categories_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="93" parent="64" name="title">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133691</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="94" parent="64" name="description">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>133691</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="95" parent="64" name="is_asset">
+      <Position>4</Position>
+      <DataType>boolean|0s</DataType>
+      <StateNumber>133691</StateNumber>
+      <DefaultExpression>false</DefaultExpression>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="96" parent="64" name="user_id">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133691</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="97" parent="64" name="created_at">
+      <Position>6</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133691</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="98" parent="64" name="updated_at">
+      <Position>7</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133691</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="99" parent="64" name="categories_pkey">
+      <ObjectId>143247</ObjectId>
+      <StateNumber>133691</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <index id="100" parent="64" name="index_categories_on_user_id">
+      <ObjectId>143254</ObjectId>
+      <StateNumber>133691</StateNumber>
+      <ColNames>user_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <key id="101" parent="64" name="categories_pkey">
+      <ObjectId>143248</ObjectId>
+      <StateNumber>133691</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>categories_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="102" parent="64" name="fk_rails_b8e2f7adfc">
+      <ObjectId>143249</ObjectId>
+      <StateNumber>133691</StateNumber>
+      <ColNames>user_id</ColNames>
+      <RefTableId>143189</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="103" parent="65" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133690</StateNumber>
+      <DefaultExpression>nextval(&apos;liabilities_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="104" parent="65" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133690</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="105" parent="65" name="description">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>133690</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="106" parent="65" name="debt">
+      <Position>4</Position>
+      <DataType>double precision|0s</DataType>
+      <StateNumber>133690</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="107" parent="65" name="payment">
+      <Position>5</Position>
+      <DataType>double precision|0s</DataType>
+      <StateNumber>133690</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="108" parent="65" name="departure_date">
+      <Position>6</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>133690</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="109" parent="65" name="user_id">
+      <Position>7</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133690</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="110" parent="65" name="created_at">
+      <Position>8</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133690</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="111" parent="65" name="updated_at">
+      <Position>9</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133690</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="112" parent="65" name="category_id">
+      <Position>10</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>133692</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="113" parent="65" name="frequency">
+      <Position>11</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133695</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="114" parent="65" name="liabilities_pkey">
+      <ObjectId>143229</ObjectId>
+      <StateNumber>133690</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <index id="115" parent="65" name="index_liabilities_on_user_id">
+      <ObjectId>143236</ObjectId>
+      <StateNumber>133690</StateNumber>
+      <ColNames>user_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <index id="116" parent="65" name="index_liabilities_on_category_id">
+      <ObjectId>143261</ObjectId>
+      <StateNumber>133692</StateNumber>
+      <ColNames>category_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <key id="117" parent="65" name="liabilities_pkey">
+      <ObjectId>143230</ObjectId>
+      <StateNumber>133690</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>liabilities_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="118" parent="65" name="fk_rails_09d5fc4432">
+      <ObjectId>143231</ObjectId>
+      <StateNumber>133690</StateNumber>
+      <ColNames>user_id</ColNames>
+      <RefTableId>143189</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="119" parent="65" name="fk_rails_11e955076b">
+      <ObjectId>143262</ObjectId>
+      <StateNumber>133692</StateNumber>
+      <ColNames>category_id</ColNames>
+      <RefTableId>143239</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>categories</RefTableName>
+      <RefKeyName>categories_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="120" parent="66" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133697</StateNumber>
+      <DefaultExpression>nextval(&apos;plain_users_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="121" parent="66" name="email">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133697</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="122" parent="66" name="password">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133697</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="123" parent="66" name="confirmation_password">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133697</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="124" parent="66" name="created_at">
+      <Position>5</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133697</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="125" parent="66" name="updated_at">
+      <Position>6</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133697</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="126" parent="66" name="plain_users_pkey">
+      <ObjectId>143287</ObjectId>
+      <StateNumber>133697</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <key id="127" parent="66" name="plain_users_pkey">
+      <ObjectId>143288</ObjectId>
+      <StateNumber>133697</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>plain_users_pkey</UnderlyingIndexName>
+    </key>
+    <column id="128" parent="67" name="version">
+      <Position>1</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133684</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="129" parent="67" name="schema_migrations_pkey">
+      <ObjectId>143177</ObjectId>
+      <StateNumber>133684</StateNumber>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <key id="130" parent="67" name="schema_migrations_pkey">
+      <ObjectId>143178</ObjectId>
+      <StateNumber>133684</StateNumber>
+      <ColNames>version</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
+    </key>
+    <column id="131" parent="68" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133686</StateNumber>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="132" parent="68" name="email">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133686</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="133" parent="68" name="encrypted_password">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133686</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="134" parent="68" name="reset_password_token">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133686</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="135" parent="68" name="reset_password_sent_at">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>133686</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="136" parent="68" name="remember_created_at">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>133686</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="137" parent="68" name="created_at">
+      <Position>7</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133686</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="138" parent="68" name="updated_at">
+      <Position>8</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133686</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="139" parent="68" name="jti">
+      <Position>9</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>133688</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="140" parent="68" name="balance">
+      <Position>10</Position>
+      <DataType>double precision|0s</DataType>
+      <StateNumber>133693</StateNumber>
+      <DefaultExpression>0.0</DefaultExpression>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="141" parent="68" name="confirmation_token">
+      <Position>11</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133696</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="142" parent="68" name="confirmed_at">
+      <Position>12</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>133696</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="143" parent="68" name="confirmation_sent_at">
+      <Position>13</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>133696</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="144" parent="68" name="unconfirmed_email">
+      <Position>14</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>133696</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="145" parent="68" name="users_pkey">
+      <ObjectId>143198</ObjectId>
+      <StateNumber>133693</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <index id="146" parent="68" name="index_users_on_email">
+      <ObjectId>143200</ObjectId>
+      <StateNumber>133693</StateNumber>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <index id="147" parent="68" name="index_users_on_reset_password_token">
+      <ObjectId>143201</ObjectId>
+      <StateNumber>133693</StateNumber>
+      <ColNames>reset_password_token</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <index id="148" parent="68" name="index_users_on_jti">
+      <ObjectId>143219</ObjectId>
+      <StateNumber>133693</StateNumber>
+      <ColNames>jti</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <key id="149" parent="68" name="users_pkey">
+      <ObjectId>143199</ObjectId>
+      <StateNumber>133686</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
