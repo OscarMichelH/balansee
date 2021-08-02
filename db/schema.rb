@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_25_231213) do
+ActiveRecord::Schema.define(version: 2021_08_02_035303) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,9 @@ ActiveRecord::Schema.define(version: 2021_07_25_231213) do
     t.date "incoming_date"
     t.bigint "category_id"
     t.string "frequency"
+    t.boolean "is_salary", default: false
+    t.boolean "is_stock", default: false
+    t.boolean "is_business", default: false
     t.index ["category_id"], name: "index_assets_on_category_id"
     t.index ["user_id"], name: "index_assets_on_user_id"
   end

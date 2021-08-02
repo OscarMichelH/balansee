@@ -2,15 +2,62 @@
   <div class="row pb-5">
     <div class="col-4 offset-4">
       <h1 class="pt-4">Income Statement</h1>
+      <%= form_for root_path, method: :get do |f| %>
+        <%= f.select(:frequency, ['DAILY', 'WEEKLY', 'MONTHLY', 'YEARLY'] - [params[:frequency]], {include_blank: false, prompt: params[:frequency], class: 'form-control'}, name: 'frequency', onchange: 'this.form.submit()') %>
+      <% end %>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-6">
-      <h4>Income</h4>
+    <div class="col-6 card">
+      <div class="card-body">
+        <div class="card-title">
+          <h4>Income</h4>
+        </div>
+        <div class="card-text">
+          <div class="row">
+            <div class="col-6">Salary</div>
+            <div class="col-6"><%= @salary_incomes %></div>
+          </div>
+          <div class="row">
+            <div class="col-6">Income From Business</div>
+            <div class="col-6"><%= @business_incomes %></div>
+          </div>
+          <div class="row">
+            <div class="col-6">Income From Dividends</div>
+            <div class="col-6"><%= @dividend_incomes %></div>
+          </div>
+          <div class="row">
+            <div class="col-6">Total Income</div>
+            <div class="col-6"><%= @total_incomes %></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-6">
-      <h4>Expenses</h4>
+    <div class="col-6 card">
+      <div class="card-body">
+        <div class="card-title">
+          <h4>Expenses</h4>
+        </div>
+        <div class="card-text">
+          <div class="row">
+            <div class="col-6">Tax Expenses</div>
+            <div class="col-6"></div>
+          </div>
+          <div class="row">
+            <div class="col-6">Credit Cards Payment</div>
+            <div class="col-6"></div>
+          </div>
+          <div class="row">
+            <div class="col-6">Bank Loans Payment</div>
+            <div class="col-6"></div>
+          </div>
+          <div class="row">
+            <div class="col-6">Total Expenses</div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

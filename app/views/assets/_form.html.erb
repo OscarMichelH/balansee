@@ -17,6 +17,17 @@
   </div>
 
   <div class="form-control">
+      <%= form.label :salary, class: 'fw-bold' %>
+      <%= form.check_box :is_salary, class: 'me-3' %>
+
+
+    <%= form.label :business, class: 'fw-bold' %>
+    <%= form.check_box :is_business, class: 'me-3' %>
+    <%= form.label :stock, class: 'fw-bold' %>
+    <%= form.check_box :is_stock %>
+  </div>
+
+  <div class="form-control">
     <%= form.label :description, class: 'fw-bold' %>
     <%= form.text_area :description, class: 'form-control' %>
   </div>
