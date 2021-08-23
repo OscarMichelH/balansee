@@ -7,6 +7,15 @@ class Api::SessionsController < Devise::SessionsController
   # POST /api/login
   #
 
+  def new
+    @user = current_user
+    if @user
+      render :'devise/sessions/new' , status: :ok
+    else
+      head(:unauthorized)
+    end
+  end
+
   def show
     @user = User.find(params[:id])
     if @user
