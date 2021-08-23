@@ -7,6 +7,9 @@ class IncomeStatementController < ApplicationController
     @business_incomes = current_user.income_calculated(frequency, false, true, false)&.round(2)
     @dividend_incomes = current_user.income_calculated(frequency, false, false, true)&.round(2)
     @total_incomes = (@salary_incomes + @business_incomes + @dividend_incomes)&.round(2)
-    @liabilities  = current_user.liabilities
+    @tax_expenses = 0
+    @credit_cards_payment = 0
+    @bank_loans_payment = 0
+    @total_expenses  = (@tax_expenses + @credit_cards_payment + @bank_loans_payment)&.round(2)
   end
 end

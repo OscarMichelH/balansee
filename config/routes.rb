@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :liabilities
   resources :assets
+  get 'balance', to: 'income_statement#index'
   devise_scope :user do
     devise_for :users, controllers: {
       registrations: 'users/registrations',
