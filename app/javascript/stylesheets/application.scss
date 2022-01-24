@@ -1,1 +1,26 @@
 @import "bootstrap";
+
+$colors: (
+        "blue":       $blue,
+        "indigo":     $indigo,
+        "purple":     $purple,
+        "pink":       $pink,
+        "red":        $red,
+        "orange":     $orange,
+        "yellow":     $yellow,
+        "green":      $green,
+        "teal":       $teal,
+        "ligth-teal": $teal-100,
+        "cyan":       $cyan,
+        "white":      $white,
+        "gray":       $gray-600,
+        "gray-dark":  $gray-800
+);
+
+.bg-lightseagreen {
+  background-color: rgb(0,167,157);
+}
+
+.text-lightseagreen {
+  color: rgb(0,167,157);
+}
